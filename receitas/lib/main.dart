@@ -128,7 +128,10 @@ Widget _buildRecipeHamburguer() {
                       color: Colors.deepOrangeAccent),
                 ),
                 Text(
-                  "• 100 g de acém moído\n"
+                  "• pão de hamburguer\n"
+                      "• alface\n"
+                      "• tomate\n\n"
+                      "• 100 g de acém moído\n"
                       "• 100 g de alcatra moída\n"
                       "• 1 punhado de salsinha picada\n"
                       "• sal e pimenta-do-reino à gosto",
@@ -159,7 +162,9 @@ Widget _buildRecipeHamburguer() {
                       "Pré-aqueça o forno em 180º, modele os discos de carne "
                       "e leve ao forno por ao menos 15 minutos, "
                       "ou deixe por mais tempo "
-                      "até alcançar o ponto desejado da carne.",
+                      "até alcançar o ponto desejado da carne.\n\n"
+                      "Quando o hamburguer estiver pronto, ponha-o "
+                      "no pão junto com alface e tomate e sirva",
                   textAlign: TextAlign.left,
                   style: TextStyle(fontSize: 25.0),
                 ),
@@ -195,7 +200,10 @@ Widget _buildRecipeHamburguer() {
                       color: Colors.deepOrangeAccent),
                 ),
                 Text(
-                  "• 500 g de peito de frango\n"
+                  "• pão de hamburguer\n"
+                      "• alface\n"
+                      "• tomate\n\n"
+                      "• 500 g de peito de frango\n"
                       "• 1 ovo\n"
                       "• suco de 1 limão\n"
                       "• 1 cebola pequena ralada\n"
@@ -234,7 +242,9 @@ Widget _buildRecipeHamburguer() {
                     "untada com um fio de azeite. Deixe grelhar "
                     "por 3 minutos de cada lado com uma tampa "
                     "para preservar a umidade do frango. Repita "
-                    "o processo com cada hamburguer e sirva.",
+                    "o processo com cada hamburguer.\n\n"
+                    "Quando o hamburguer estiver pronto, ponha-o"
+                    "no pão junto com alface e tomate e sirva",
                 textAlign: TextAlign.left,
                 style: TextStyle(fontSize: 25.0),
               ),
