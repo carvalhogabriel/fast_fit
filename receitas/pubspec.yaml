@@ -19,7 +19,7 @@ dependencies:
   flutter_launcher_icons: "^0.6.1"
 
 flutter_icons:
-  image_path: "icons/launcher.png"
+  image_path: "icons/icon.png"
   android: true
   ios: true
 
@@ -51,6 +51,10 @@ flutter:
   - images/hamburguer.png
   - images/nuggets.png
   - images/chips.png
+  - images/pizza.png
+  - images/soda.png
+  - images/yogurt.png
+  - icons/launchscreen.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

@@ -1,8 +1,9 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: FirstScreen(),
+    home: FirstScreen()
   ));
 }
 
@@ -380,7 +381,7 @@ Widget _buildRecipeChips() {
                       "sobre as batatas e polvilhe os "
                       "temperos da sua preferência.\n "
                       "Leve ao forno por 10 minutos à temperatura "
-                      "de 200º C.",
+                      "de 180 C.",
                   textAlign: TextAlign.left,
                   style: TextStyle(fontSize: 25.0),
                 ),
@@ -549,6 +550,429 @@ Widget _buildRecipeNuggets() {
   );
 }
 
+Widget _buildRecipePizza() {
+  return SingleChildScrollView(
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 10.0),
+          child: Image.asset("images/pizza.png",
+              fit: BoxFit.contain, height: 250.0),
+        ),
+        Text(
+          "Pizza",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
+        ),
+        Divider(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "PREPARO",
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "RENDIMENTO",
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            )
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "40 MINUTOS",
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
+                  child: Text(
+                    "1 UNIDADE",
+                    style:
+                    TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+        Padding(
+            padding: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Divider(),
+                Text(
+                  "INGREDIENTES:\n",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 25.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.deepOrangeAccent),
+                ),
+                Text(
+                  "• 1 xícara de chá de leite frio desnatado\n"
+                      "• 2 ovos\n"
+                      "• 4 colheres de sopa de manteiga\n"
+                      "• 2 xícaras de chá de farinha de trigo\n"
+                      "• 1 colher de sopa de fermento em pó\n"
+                      "• 1 colher de chá de sal\n\n"
+                      "• 200g de mussarela em fatias\n"
+                      "• 3 tomates grandes cortados em rodelas\n"
+                      "• 1 xícara de brócolis cozido e picado\n"
+                      "• orégano a gosto\n"
+                      "• molho de tomate",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ],
+            )),
+        Padding(
+            padding: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Text(
+                  "MODO DE PREPARO:\n",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25.0,
+                      color: Colors.deepOrangeAccent),
+                ),
+                Text(
+                  "Adicione todos os ingredientes líquidos no "
+                      "liquidificador, então adicione os outros e "
+                      "bata novamente. Quando estiver homogeneo "
+                      "depeje em uma forma redonda para pizza "
+                      "untada e leve para assar em forno médio "
+                      "pré-aquecido até dourar. Tempo varia de acordo "
+                      "com o forno. Retire do forno, adicione o "
+                      "molho de tomate, espalhe bem, adicione a "
+                      "mussarela, fatias de tomates, brócolis e "
+                      "ervas, leve novamente ao forno até o queijo "
+                      "derreter e sirva.",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ],
+            )),
+        Divider(),
+        Padding(
+          padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 20.0),
+          child: Text(
+            "OBS: REALIZAR A RECEITA COM SUPERVISÃO DE UM ADULTO",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontWeight: FontWeight.bold, color: Colors.red, fontSize: 20.0),
+          ),
+        )
+      ],
+    ),
+  );
+}
+
+Widget _buildRecipeSoda() {
+  return SingleChildScrollView(
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 10.0),
+          child: Image.asset("images/soda.png",
+              fit: BoxFit.contain, height: 250.0),
+        ),
+        Text(
+          "Refrigerante",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
+        ),
+        Divider(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "PREPARO",
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "RENDIMENTO",
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            )
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "30 MINUTOS",
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
+                  child: Text(
+                    "3 PORÇÕES",
+                    style:
+                    TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+        Padding(
+            padding: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Divider(),
+                Text(
+                  "INGREDIENTES:\n",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 25.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.deepOrangeAccent),
+                ),
+                Text(
+                  "• 1 garrafa de água com gás (600 mL)\n"
+                      "• suco de duas laranjas (o suco pode "
+                      "ser tirado da fruta que você quiser)\n"
+                      "• açucar",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ],
+            )),
+        Padding(
+            padding: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Text(
+                  "MODO DE PREPARO:\n",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25.0,
+                      color: Colors.deepOrangeAccent),
+                ),
+                Text(
+                  "Separe as raspas da larannja e coloque-as na "
+                      "panela. Coloque o suco das duas laranjas "
+                      "na mesma panela e coloque meio copo de "
+                      "açucar, fervendo em fogo baixo até o "
+                      "líquido ficar com a metade do vaolume "
+                      "inicial. Espere esfriar e coloque na "
+                      "geladeira. Depois de pronto, misture o "
+                      "xarope da fruta com a água com gás.",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ],
+            )),
+        Divider(),
+        Padding(
+          padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 20.0),
+          child: Text(
+            "OBS: REALIZAR A RECEITA COM SUPERVISÃO DE UM ADULTO",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontWeight: FontWeight.bold, color: Colors.red, fontSize: 20.0),
+          ),
+        )
+      ],
+    ),
+  );
+}
+
+Widget _buildRecipeYogurt() {
+  return SingleChildScrollView(
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 10.0),
+          child: Image.asset("images/yogurt.png",
+              fit: BoxFit.contain, height: 250.0),
+        ),
+        Text(
+          "Iogurte",
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.bold),
+        ),
+        Divider(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "PREPARO",
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "RENDIMENTO",
+                  style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold),
+                )
+              ],
+            )
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: <Widget>[
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  "30 MINUTOS",
+                  style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Padding(
+                  padding: EdgeInsets.fromLTRB(0.0, 0.0, 15.0, 0.0),
+                  child: Text(
+                    "5 PORÇÕES",
+                    style:
+                    TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                  ),
+                )
+              ],
+            )
+          ],
+        ),
+        Padding(
+            padding: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Divider(),
+                Text(
+                  "INGREDIENTES:\n",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontSize: 25.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.deepOrangeAccent),
+                ),
+                Text(
+                  "• 1 litro de leite integral\n"
+                      "• 1 pote de iogurte natural sem açucar\n",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ],
+            )),
+        Padding(
+            padding: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: <Widget>[
+                Text(
+                  "MODO DE PREPARO:\n",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25.0,
+                      color: Colors.deepOrangeAccent),
+                ),
+                Text(
+                  "ATENÇÃO ESTA RECEITA REQUER 24 HORAS DE FERMENTAÇÃO.\n\n"
+                      "Ferva o leite duas vezes e espere amornar. "
+                      "Adicione o iogurte aos poucos, sem mexer, "
+                      "e deixe em repouso, com tampa, por 24 horas "
+                      "em temperatura ambiente.\n"
+                      "Depois é só colocar na geladeira e saborear "
+                      "da maneira que preferir. (exemplo: com suco "
+                      "de frutas ou frutas naturais batidas no "
+                      "liquidificador).",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(fontSize: 25.0),
+                ),
+              ],
+            )),
+        Divider(),
+        Padding(
+          padding: EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 20.0),
+          child: Text(
+            "OBS: REALIZAR A RECEITA COM SUPERVISÃO DE UM ADULTO",
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                fontWeight: FontWeight.bold, color: Colors.red, fontSize: 20.0),
+          ),
+        )
+      ],
+    ),
+  );
+}
+
 class FirstScreen extends StatefulWidget {
   @override
   _FirstScreen createState() => _FirstScreen();
@@ -577,6 +1001,15 @@ class _FirstScreen extends State<FirstScreen> {
               Divider(),
               _buildButtonRecipes(
                   context, Recipes.nuggets, "images/nuggets.png", "Nuggets"),
+              Divider(),
+              _buildButtonRecipes(
+                  context, Recipes.pizza, "images/pizza.png", "Pizza"),
+              Divider(),
+              _buildButtonRecipes(
+                  context, Recipes.soda, "images/soda.png", "Refrigerante"),
+              Divider(),
+              _buildButtonRecipes(
+                  context, Recipes.yogurt, "images/yogurt.png", "Iogurte"),
             ],
           ),
         )));
@@ -611,6 +1044,12 @@ Widget _recipeClicked(Recipes recipe) {
       return _buildRecipeChips();
     case Recipes.nuggets:
       return _buildRecipeNuggets();
+    case Recipes.pizza:
+      return _buildRecipePizza();
+    case Recipes.soda:
+      return _buildRecipeSoda();
+    case Recipes.yogurt:
+      return _buildRecipeYogurt();
     default:
       return _buildNoRecipe();
   }
@@ -625,4 +1064,4 @@ Widget _buildNoRecipe() {
   );
 }
 
-enum Recipes { burguer, chips, nuggets }
+enum Recipes { burguer, chips, nuggets, pizza, soda, yogurt }
