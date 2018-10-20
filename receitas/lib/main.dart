@@ -164,7 +164,7 @@ Widget _buildRecipeHamburguer() {
                       "ou deixe por mais tempo "
                       "até alcançar o ponto desejado da carne.\n\n"
                       "Quando o hamburguer estiver pronto, ponha-o "
-                      "no pão junto com alface e tomate e sirva",
+                      "no pão junto com alface e tomate e sirva.",
                   textAlign: TextAlign.left,
                   style: TextStyle(fontSize: 25.0),
                 ),
@@ -244,7 +244,7 @@ Widget _buildRecipeHamburguer() {
                     "para preservar a umidade do frango. Repita "
                     "o processo com cada hamburguer.\n\n"
                     "Quando o hamburguer estiver pronto, ponha-o"
-                    "no pão junto com alface e tomate e sirva",
+                    "no pão junto com alface e tomate e sirva.",
                 textAlign: TextAlign.left,
                 style: TextStyle(fontSize: 25.0),
               ),
@@ -529,7 +529,7 @@ Widget _buildRecipeNuggets() {
                       "junto com o sal, pimenta-do-reino, cebola "
                       "e os dentes de alho.\n"
                       "Processe os ingredientes ou bata no liquidificador.\n"
-                      "Deixe os ingredientes bem homogenios.\n"
+                      "Deixe os ingredientes bem homogenêos.\n"
                       "Faça o formato de nuggets de acordo com sua vontade.\n"
                       "Para empanar você irá precisar separar em "
                       "três recipientes a farinha de rosca, o ovo e "
@@ -680,7 +680,7 @@ Widget _buildRecipePizza() {
                   "Adicione todos os ingredientes líquidos no "
                       "liquidificador, então adicione os outros e "
                       "bata novamente. Quando estiver homogeneo "
-                      "depeje em uma forma redonda para pizza "
+                      "despeje em uma forma redonda para pizza "
                       "untada e leve para assar em forno médio "
                       "pré-aquecido até dourar. Tempo varia de acordo "
                       "com o forno. Retire do forno, adicione o "
@@ -818,11 +818,11 @@ Widget _buildRecipeSoda() {
                       color: Colors.deepOrangeAccent),
                 ),
                 Text(
-                  "Separe as raspas da larannja e coloque-as na "
+                  "Separe as raspas da laranja e coloque-as na "
                       "panela. Coloque o suco das duas laranjas "
                       "na mesma panela e coloque meio copo de "
                       "açucar, fervendo em fogo baixo até o "
-                      "líquido ficar com a metade do vaolume "
+                      "líquido ficar com a metade do volume "
                       "inicial. Espere esfriar e coloque na "
                       "geladeira. Depois de pronto, misture o "
                       "xarope da fruta com a água com gás.",
