@@ -539,7 +539,7 @@ Widget _buildRecipeNuggets() {
                       "Passe o nuggets na farinha de trigo, depois no "
                       "ovo e depois na farinha de rosca (repita este "
                       "procedimento duas vezes).\n"
-                      "Leve ao forno até dourar",
+                      "Leve ao forno até dourar.",
                   textAlign: TextAlign.left,
                   style: TextStyle(fontSize: 25.0),
                 ),
