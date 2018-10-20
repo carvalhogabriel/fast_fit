@@ -679,7 +679,7 @@ Widget _buildRecipePizza() {
                 Text(
                   "Adicione todos os ingredientes líquidos no "
                       "liquidificador, então adicione os outros e "
-                      "bata novamente. Quando estiver homogeneo "
+                      "bata novamente. Quando estiver homogenêo "
                       "despeje em uma forma redonda para pizza "
                       "untada e leve para assar em forno médio "
                       "pré-aquecido até dourar. Tempo varia de acordo "
