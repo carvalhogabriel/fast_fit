@@ -243,7 +243,7 @@ Widget _buildRecipeHamburguer() {
                     "por 3 minutos de cada lado com uma tampa "
                     "para preservar a umidade do frango. Repita "
                     "o processo com cada hamburguer.\n\n"
-                    "Quando o hamburguer estiver pronto, ponha-o"
+                    "Quando o hamburguer estiver pronto, ponha-o "
                     "no pão junto com alface e tomate e sirva.",
                 textAlign: TextAlign.left,
                 style: TextStyle(fontSize: 25.0),
